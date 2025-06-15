@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Studio Albums</title>
+  <style>
+    /* Layout styles */
+    body {
+      background-color: #000000;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 40px;
+      min-height: 100vh;
+      margin: 0;
+      font-family: 'JetBrains Mono', monospace;  
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr); /* Three columns */
+      gap: 100px; /* Increase space between cards */
+      max-width: 800px; /* Limit the grid width */
+      margin: 0 auto; /* Center the grid horizontally */
+      justify-content: center; /* Center the grid items horizontally */
+      align-content: center; /* Center the grid items vertically */
+      padding-bottom: 100px; /* Bottom spacing */
+    }
+
+    .btn-custom {
+      background-color: #6f0000;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      text-decoration: none;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 1rem;
+      margin-bottom: 20px;
+      transition: background-color 0.3s ease;
+    }
+
+    .btn-custom:hover {
+      background-color: #8b0000; /* Slightly lighter shade for hover effect */
+    }
+
+    /* Uiverse Card Flip CSS by ElSombrero2 */
+    .card {
+      overflow: visible;
+      width: 190px;
+      height: 254px;
+      position: relative;
+      perspective: 1000px;
+    }
+
+    .content {
+      width: 100%;
+      height: 100%;
+      transform-style: preserve-3d;
+      transition: transform 300ms;
+      box-shadow: 0px 0px 10px 1px #000000ee;
+      border-radius: 5px;
+      position: relative;
+    }
+
+    .front, .back {
+      background-color: #151515;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      backface-visibility: hidden;
+      -webkit-backface-visibility: hidden;
+      border-radius: 5px;
+      overflow: hidden;
+    }
+
+    .back {
+      justify-content: center;
+      display: flex;
+      align-items: center;
+    }
+
+    .back-content {
+      position: absolute;
+      width: 99%;
+      height: 99%;
+      background-color: #000000;
+      border-radius: 5px;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 30px;
+    }
+
+    .card:hover .content {
+      transform: rotateY(180deg);
+    }
+
+    .front {
+      transform: rotateY(180deg);
+      color: white;
+    }
+
+    .front .front-content {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      padding: 10px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .front-content .badge {
+      background-color: #00000055;
+      padding: 2px 10px;
+      border-radius: 10px;
+      backdrop-filter: blur(2px);
+      width: fit-content;
+    }
+
+    .description {
+      box-shadow: 0px 0px 10px 5px #00000088;
+      width: 100%;
+      padding: 10px;
+      background-color: #00000099;
+      backdrop-filter: blur(5px);
+      border-radius: 5px;
+    }
+
+    .title {
+      font-size: 11px;
+      max-width: 100%;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .title p {
+      width: 50%;
+    }
+
+    .card-footer {
+      color: #ffffff88;
+      margin-top: 5px;
+      font-size: 8px;
+    }
+
+    .front .img {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+    }
+
+    @media (max-width: 768px) {
+      .grid {
+        grid-template-columns: repeat(2, 1fr); /* Two columns for smaller screens */
+      }
+    }
+
+    @media (max-width: 480px) {
+      .grid {
+        grid-template-columns: 1fr; /* Single column for very small screens */
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Back to Home Button -->
+  <a href="index.html" class="btn-custom">Back to Home</a>
+
+  <div class="grid">
+
+    <!-- SECTION.80 -->
+    <div class="card">
+      <div class="content">
+        <div class="front">
+          <a href="checkout.html?productId=section80">
+            <img src="images1/section80.jpg" class="img" alt="Section.80" 
+                 onmouseover="playAudio('audio-section80')" 
+                 onmouseout="pauseAudio('audio-section80')">
+          </a>
+          <div class="front-content">
+            <div class="badge">Section.80</div>
+            <p class="card-footer">Released on July 2, 2011 under Top Dawg Entertainment (TDE).</p>
+          </div>
+        </div>
+        <div class="back">
+          <div class="back-content">
+            <audio id="audio-section80">
+              <source src="../MIDTERM-PETA/album songs/section.80.mp3" type="audio/mpeg">
+            </audio>
+            <a href="checkout.html?productId=section80">
+              <img src="images1/section.80vinyl.png" alt="Section.80 Vinyl" style="width: 100%; height: 100%; object-fit: cover;">
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- GKMC -->
+    <div class="card">
+      <div class="content">
+        <div class="front">
+          <a href="checkout.html?productId=gkmc">
+            <img src="images1/gkmc.jpg" class="img" alt="good kid, m.A.A.d city" 
+                 onmouseover="playAudio('audio-gkmc')" 
+                 onmouseout="pauseAudio('audio-gkmc')">
+          </a>
+          <div class="front-content">
+            <div class="badge">good kid, m.A.A.d city</div>
+            <p class="card-footer">Released on October 22, 2012, by Interscope Records, Top Dawg Entertainment and Dr. Dre's Aftermath Entertainment.</p>
+          </div>
+        </div>
+        <div class="back">
+          <div class="back-content">
+            <audio id="audio-gkmc">
+              <source src="../MIDTERM-PETA/album songs/gkmc.mp3" type="audio/mpeg">
+            </audio>
+            <a href="checkout.html?productId=gkmc">
+              <img src="images1/gkmcvinyl.png" alt="good kid, m.A.A.d city Vinyl" style="width: 100%; height: 100%; object-fit: cover;">
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- TPAB -->
+    <div class="card">
+      <div class="content">
+        <div class="front">
+          <a href="checkout.html?productId=tpab">
+            <img src="images1/tpab.jpg" class="img" alt="To Pimp a Butterfly">
+          </a>
+          <div class="front-content">
+            <div class="badge">To Pimp a Butterfly</div>
+            <p class="card-footer">Released on March 15, 2015, by Top Dawg Entertainment, Aftermath Entertainment and Interscope Records.</p>
+          </div>
+        </div>
+        <div class="back">
+          <div class="back-content">
+            <a href="checkout.html?productId=tpab">
+              <img src="images1/tpabvinyl.png" alt="To Pimp a Butterfly Vinyl" style="width: 100%; height: 100%; object-fit: cover;">
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- DAMN. -->
+    <div class="card">
+      <div class="content">
+        <div class="front">
+          <a href="checkout.html?productId=damn">
+            <img src="images1/damn.jpg" class="img" alt="DAMN.">
+          </a>
+          <div class="front-content">
+            <div class="badge">DAMN.</div>
+            <p class="card-footer">Released on April 14, 2017, through Top Dawg Entertainment, Aftermath Entertainment, and Interscope Records.</p>
+          </div>
+        </div>
+        <div class="back">
+          <div class="back-content">
+            <a href="checkout.html?productId=damn">
+              <img src="images1/damnvinyl.png" alt="DAMN. Vinyl" style="width: 100%; height: 100%; object-fit: cover;">
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- MMATBS -->
+    <div class="card">
+      <div class="content">
+        <div class="front">
+          <a href="checkout.html?productId=mmatbs">
+            <img src="images1/mmatbs.png" class="img" alt="Mr. Morale & The Big Steppers">
+          </a>
+          <div class="front-content">
+            <div class="badge">Mr. Morale & The Big Steppers</div>
+            <p class="card-footer">Released on May 13, 2022, by PGLang, Top Dawg Entertainment (TDE), Aftermath Entertainment, and Interscope Records.</p>
+          </div>
+        </div>
+        <div class="back">
+          <div class="back-content">
+            <a href="checkout.html?productId=mmatbs">
+    <!-- GNX -->
+    <div class="card">
+      <div class="content">
+        <div class="front">
+          <a href="checkout.html?productId=gnx">
+            <img src="images1/gnx.png" class="img" alt="GNX">
+          </a>
+          <div class="front-content">
+            <div class="badge">GNX</div>
+            <p class="card-footer">A surprise release on November 22, 2024, through PGLang and Interscope Records.</p>
+          </div>
+        </div>
+        <div class="back">
+          <div class="back-content">
+            <a href="checkout.html?productId=gnx">
+              <img src="images1/gnxvinyl.png" alt="GNX Vinyl" style="width: 100%; height: 100%; object-fit: cover;">
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project: Masak0</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <style>
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes slideIn {
+            from {
+                opacity: 0;
+                transform: translateX(-50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh; /* Ensure the body takes up the full viewport height */
+            margin: 0; /* Remove default margin */
+            padding: 0; /* Remove default padding */
+            color: white;
+            background-color: black;
+        }
+
+        main {
+            flex: 1; /* Push the footer to the bottom */
+        }
+
+        footer {
+            background-color: rgba(0, 0, 0, 0.8); /* Optional: Add a background color for better visibility */
+            margin: 0; /* Remove any default margin */
+        }
+
+        /* Custom button color */
+        .btn-custom {
+            background-color: #6f0000;
+            color: white;
+            border: none;
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        .btn-custom:hover {
+            background-color: #8b0000; /* Slightly lighter shade for hover effect */
+        }
+
+        .container {
+            width: 100%;
+            height: 100vh;
+        }
+
+        .slides {
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 50px;
+            background-color: black;
+        }
+
+        /* Animations for text and images */
+        h1 {
+            font-family: 'JetBrains Mono', monospace;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+
+        p.lead {
+            font-family: 'JetBrains Mono', monospace;
+            color: red;
+            animation: slideIn 1.5s ease-in-out;
+        }
+
+        img {
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        .blur-overlay {
+            animation: fadeIn 1.5s ease-in-out;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <section class="container my-5">
+            <div class="blur-overlay text-center">
+                <div class="col">
+                    <h1>Welcome to Project Masako</h1>
+                    <p class="lead">0 kendrick lamar initiative 0</p>
+                    <div class="btn-group" role="group" aria-label="Basic example">
+                        <a href="index.html" class="btn btn-custom">Home</a>
+                        <a href="Clothing-page.html" class="btn btn-custom">Clothing</a>
+                        <a href="Album-page.html" class="btn btn-custom">Studio Albums</a>
+                        <a href="Aboutus-page.html" class="btn btn-custom">About Us</a>
+                    </div>
+                </div>
+                <div class="col">
+                    <img src="../MIDTERM-PETA/images/background images/logo.png" alt="Logo" class="img-fluid" style="width: 50%;">
+                </div>                   
+            </div>
+        </section>
+
+        <div class="container">
+            <div class="slides">
+                <img src="../MIDTERM-PETA/images/background images/background.png.jpg" alt="Background" class="img-fluid" style="width: 100%; height: auto; border-radius: 15px;">
+            </div>
+        </div>
+
+        <!-- Move the lorem ipsum text here -->
+        <div class="container my-5">
+            <div class="slides">
+                <h4 class="text-center" style="font-family: 'JetBrains Mono', monospace; color: white;">
+                    <br>MASAK0 is an online clothing and lifestyle retailer specializing in contemporary streetwear and official Kendrick Lamar merchandise. Known for its bold, fashion-forward approach, MASAK0 offers a curated selection of clothing, shoes, and exclusive items inspired by the artistry and cultural influence of Kendrick Lamar.<br>
+                    
+                    <br>From graphic t-shirts and stylish jackets to sneakers and limited-edition drops, MASAK0 blends modern streetwear aesthetics with the lyrical and visual identity of Kendrick’s music. The store also features official Kendrick Lamar albums—both physical and collectible editions—making it a one-stop destination for fans and streetwear enthusiasts alike.<br>
+                    
+                    <br> Masako has a commitment to quality, authenticity, and cultural relevance, MASAK0 stands at the intersection of music and fashion, delivering products that reflect the spirit of creativity, resistance, and individuality.                  
+                </h4>
+            </div>
+        </div>
+    </main>
+
+    <footer class="text-center p-3">
+        <div class="container">
+            <p>&copy; 2025 Sakai Inc. | Contact: greatdiggerassociation@gmail.com</p>
+        </div>
+    </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-Q6E6E5+2Z5J5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous"></script>
+</body>
+</html>

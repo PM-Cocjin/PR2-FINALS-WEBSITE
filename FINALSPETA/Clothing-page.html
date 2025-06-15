@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <title>Clothing Browsing Page</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&display=swap');
+
+        body {
+            font-family: 'JetBrains Mono', monospace; /* Updated font */
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: black; /* Black background */
+            color: white;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh; /* Ensures full height of the page */
+        }
+        header {
+            background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent black */
+            padding: 1rem;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgba(0, 0, 0, 0.9); /* Semi-transparent black */
+            padding: 1rem 0;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 1rem;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .btn-custom {
+            background-color: #8b0000;
+            color: white;
+            border: none;
+            font-family: 'JetBrains Mono', monospace; /* Updated font */
+        }
+        .btn-custom:hover {
+            background-color: #6f0000; /* Slightly lighter shade for hover effect */
+        }
+        .clothing-container {
+            margin: 2rem auto;
+            padding: 2rem;
+            background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent black for readability */
+            border-radius: 8px;
+        }
+        .clothing-item img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        .clothing-item h5, .clothing-item p {
+            font-family: 'JetBrains Mono', monospace; /* Updated font */
+        }
+        footer {
+            background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent black */
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            margin-top: auto; /* Ensures footer stays at the bottom */
+            font-family: 'JetBrains Mono', monospace; /* Updated font */
+        }
+    </style>
+</head>
+<body>
+    <div container>
+        <div class="row">
+            <header style="background-color: #6f0000;">
+                <h1>Merchandise</h1>
+            </header>
+        </div>
+    </div>
+    <div class="container-fluid" style="align-items: center; background-color: #8b0000; padding: 1rem;">
+        <div class="col-md-12 text-center">
+            <div class="btn-group" role="group" aria-label="Basic example">
+                <a href="index.html" class="btn btn-custom">Home</a>
+                <a href="Clothing-page.html" class="btn btn-custom">Clothing</a>
+                <a href="Album-page.html" class="btn btn-custom">Studio Albums</a>
+                <a href="Aboutus-page.html" class="btn btn-custom">About Us</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="container clothing-container">
+        <h2 class="text-center mb-4">Browse Our Clothing</h2>
+        <div class="row g-4">
+            <!-- Clothing Item 1 -->
+            <div class="col-md-4">
+                <div class="clothing-item">
+                    <a href="checkout.html?productId=p1">
+                    <img src="../MIDTERM-PETA/images/product images/tshirt.png" alt="T-Shirt 1" class="img-fluid">
+                    </a>
+                    <h5 class="mt-2 text-center">Graphic T-Shirt</h5>
+                    <p class="text-center">$25.00</p>
+                </div>
+            </div>
+            <!-- Clothing Item 2 -->
+            <div class="col-md-4">
+                <div class="clothing-item">
+                    <a href="checkout.html?productId=p2">
+                    <img src="../MIDTERM-PETA/images/product images/hoodie1.png" alt="Hoodie 1" class="img-fluid">
+                    </a>
+                    <h5 class="mt-2 text-center">Stylish Hoodie</h5>
+                    <p class="text-center">$45.00</p>
+                </div>
+            </div>
+            <!-- Clothing Item 3 -->
+            <div class="col-md-4">
+                <div class="clothing-item">
+                    <a href="checkout.html?productId=p3">
+                    <img src="../MIDTERM-PETA/images/product images/jacket1.png" alt="Jacket 1" class="img-fluid">
+                    </a>
+                    <h5 class="mt-2 text-center">Modern Jacket</h5>
+                    <p class="text-center">$60.00</p>
+                </div>
+            </div>
+            <!-- Clothing Item 4 -->
+            <div class="col-md-4">
+                <div class="clothing-item">
+                    <a href="checkout.html?productId=p6">
+                    <img src="../MIDTERM-PETA/images/product images/tshirt1.png" alt="tshirt2" class="img-fluid">
+                    </a>
+                    <h5 class="mt-2 text-center">Casual Tee</h5>
+                    <p class="text-center">$30.00</p>
+                </div>
+            </div>
+            <!-- Clothing Item 5 -->
+            <div class="col-md-4">
+                <div class="clothing-item">
+                    <a href="checkout.html?productId=p5">
+                    <img src="../MIDTERM-PETA/images/product images/shoes.avif" alt="Shoes 1" class="img-fluid">
+                    </a>
+                    <h5 class="mt-2 text-center">Sneakers</h5>
+                    <p class="text-center">$50.00</p>
+                </div>
+            </div>
+            <!-- Clothing Item 6 -->
+            <div class="col-md-4">
+                <div class="clothing-item">
+                    <a href="checkout.html?productId=p4">
+                    <img src="../MIDTERM-PETA/images/product images/cap1.png" alt="Hat 1" class="img-fluid">
+                    </a>
+                    <h5 class="mt-2 text-center">Baseball Cap</h5>
+                    <p class="text-center">$20.00</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>© Sakai Inc. All rights reserved.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-Q6E6E5+2Z5J5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous"></script>
+</body>
+</html>

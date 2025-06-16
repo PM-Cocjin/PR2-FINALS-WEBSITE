@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Song About Meiosis - Video</title>
+  <style>
+    body {
+      background-color: #000000;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      margin: 0;
+      font-family: 'JetBrains Mono', monospace;
+    }
+    .btn-custom {
+      background-color: #6f0000;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      text-decoration: none;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 1rem;
+      margin-bottom: 30px;
+      transition: background-color 0.3s ease;
+      display: inline-block;
+    }
+    .btn-custom:hover {
+      background-color: #8b0000;
+    }
+    .video-container {
+      width: 90vw;
+      max-width: 720px;
+      background: #181818;
+      border-radius: 10px;
+      box-shadow: 0 0 20px #000a;
+      padding: 24px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    video {
+      width: 100%;
+      border-radius: 8px;
+      background: #000;
+    }
+  </style>
+</head>
+<body>
+  <a href="index.html" class="btn-custom">Back to Home</a>
+  <div class="video-container">
+    <video controls>
+      <source src="meiosis-song.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+</body>
+</html>

@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Slider</title>
+  <title>EVERYTHING ABOUT MEIOSIS</title>
   <style>
     * {
       margin: 0;
@@ -129,6 +129,27 @@
       background-color: rgba(255,255,255,0.3);
     }
 
+    .btn-custom {
+      background-color: #6f0000;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      text-decoration: none;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 1rem;
+      margin: 20px 0;
+      display: inline-block;
+      transition: background-color 0.3s;
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      z-index: 10;
+    }
+    .btn-custom:hover {
+      background-color: #8b0000;
+    }
+
     @media (width > 650px) and (width < 900px) {
       .content .title        { font-size: 1rem; }
       .content .description  { font-size: 0.7rem; }
@@ -160,63 +181,70 @@
       .item:nth-child(5) { left: calc(50% + 280px); }
       .item:nth-child(6) { left: calc(50% + 420px); opacity: 0; }
     }
+    .btn-link {
+
+      display: inline-block;
+      background-color: rgba(0,0,0,0.1);
+      color: white;
+      border: 2px solid white;
+      border-radius: 0.25rem;
+      padding: 0.75rem;
+      cursor: pointer;
+      text-decoration: none;
+      font: inherit;
+      margin-top: 10px;
+      transition: background 0.2s;
+    }
+    .btn-link:hover {
+      background-color: rgba(255,255,255,0.2);
+    }
   </style>
 </head>
 <body>
+  <a href="index.html" class="btn-custom">Back to Home</a>
   <main>
     <ul class='slider'>
-      <li class='item' style="background-image: url('https://cdn.mos.cms.futurecdn.net/dP3N4qnEZ4tCTCLq59iysd.jpg')">
+      <li class='item' style="background-image: url('Assets/images/meiosis_images/PMAT\ i.png')">
         <div class='content'>
-          <h2 class='title'>"Lossless Youths"</h2>
+          <h2 class='title'>"EXPLORE: meiosis"</h2>
           <p class='description'> Lorem ipsum, dolor sit amet consectetur
           adipisicing elit. Tempore fuga voluptatum, iure corporis inventore
           praesentium nisi. Id laboriosam ipsam enim.  </p>
           <button>Read More</button>
         </div>
       </li>
-      <li class='item' style="background-image: url('https://i.redd.it/tc0aqpv92pn21.jpg')">
+      <li class='item' style="background-image: url('Assets/images/meiosis_images/PMAT\ i.png')">
         <div class='content'>
-          <h2 class='title'>"Estrange Bond"</h2>
+          <h2 class='title'>"What is MEIOSIS?"</h2>
           <p class='description'> Lorem ipsum, dolor sit amet consectetur
           adipisicing elit. Tempore fuga voluptatum, iure corporis inventore
           praesentium nisi. Id laboriosam ipsam enim.  </p>
-          <button>Read More</button>
+          <a href="wat_meiosis.html" class="btn-link">Read More</a>
         </div>
       </li>
-      <li class='item' style="background-image: url('https://wharferj.files.wordpress.com/2015/11/bio_north.jpg')">
+      <li class='item' style="background-image: url('Assets/images/meiosis_images/PMAT i.png')">
         <div class='content'>
-          <h2 class='title'>"The Gate Keeper"</h2>
-          <p class='description'> Lorem ipsum, dolor sit amet consectetur
-          adipisicing elit. Tempore fuga voluptatum, iure corporis inventore
-          praesentium nisi. Id laboriosam ipsam enim.  </p>
-          <button>Read More</button>
-        </div>
-      </li>
-      <li class='item' style="background-image: url('https://images7.alphacoders.com/878/878663.jpg')">
-        <div class='content'>
-          <h2 class='title'>"Last Trace Of Us"</h2>
+          <h2 class='title'>"PMAT i"</h2>
           <p class='description'>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore fuga voluptatum, iure corporis inventore praesentium nisi. Id laboriosam ipsam enim.
+            Prophase i → Metaphase i → Anaphase i → Telephase i
           </p>
-          <button>Read More</button>
+          <a href="PMATi.html" class="btn-link">Read More</a>
         </div>
       </li>
-      <li class='item' style="background-image: url('https://theawesomer.com/photos/2017/07/simon_stalenhag_the_electric_state_6.jpg')">
+      <li class='item' style="background-image: url('Assets/images/meiosis_images/PMAT i.png')">
         <div class='content'>
-          <h2 class='title'>"Urban Decay"</h2>
+          <h2 class='title'>"PMAT ii"</h2>
           <p class='description'>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore fuga voluptatum, iure corporis inventore praesentium nisi. Id laboriosam ipsam enim.
+            Prophase ii → Metaphase ii → Anaphase ii → Telephase ii
           </p>
-          <button>Read More</button>
+          <a href="PMATii.html" class="btn-link">Read More</a>
         </div>
       </li>
-      <li class='item' style="background-image: url('https://da.se/app/uploads/2015/09/simon-december1994.jpg')">
+      <li class='item' style="background-image: url('Assets/images/meiosis_images/PMAT i.png')">
         <div class='content'>
-          <h2 class='title'>"The Migration"</h2>
-          <p class='description'> Lorem ipsum, dolor sit amet consectetur
-          adipisicing elit. Tempore fuga voluptatum, iure corporis inventore
-          praesentium nisi. Id laboriosam ipsam enim.  </p>
-          <button>Read More</button>
+          <h2 class='title'>"Importance of MEIOSIS"</h2>
+          <p class='description'> why does it matter?  </p>
+          <a href="importance.html" class="btn-link">Read More</a>
         </div>
       </li>
     </ul>
